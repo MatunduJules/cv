@@ -15,8 +15,8 @@ body
 #page aside
 {
 	width: 30%;
-	background-color: #7451eb;
-	color: #ffffff;
+	background-color: #ffbf1e;
+	color: #000000;
 }
 
 #page aside img
@@ -31,8 +31,8 @@ body
 
 #page aside h3
 {
-	background-color: #ffffff;
-	color: #7451eb;
+	background-color: #000000;
+	color: #ffffff;
 	text-align: center;
 	padding: 5px;
 }
@@ -43,12 +43,50 @@ body
 	font-size: 1em;
 }
 
+#page aside .fitness 
+{
+	text-align: center;
+}
 
+#page aside .fitness img
+{
+	width: 23%;
+	display: inline-block;
+	vertical-align: middle;
+}
 
+#page aside .reseaux 
+{
+	text-align: center;
+}
+
+#page aside .reseaux img
+{
+	width: 23%;
+	display: inline-block;
+	vertical-align: middle;
+}
 
 
 /* MAIN */
 #page main
 {
 	width: 70%;
+}
+
+#page main h1
+{
+	margin-left: 10%;
+}
+
+#page main h1 div
+{
+	margin-left: 10%;
+	color: #ffbf1e;
+}
+
+#page main h2
+{
+	margin-top: -1%;
+	background-color: #ffbf1e;
 }
