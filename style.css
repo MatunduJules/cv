@@ -15,7 +15,13 @@ body
 #page aside
 {
 	width: 30%;
-	background-color: #ffbf1e;
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffbf1e+0,ffbf1e+90,ffffff+98 */
+background: #ffbf1e; /* Old browsers */
+background: -moz-linear-gradient(left,  #ffbf1e 0%, #ffbf1e 90%, #ffffff 98%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #ffbf1e 0%,#ffbf1e 90%,#ffffff 98%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #ffbf1e 0%,#ffbf1e 90%,#ffffff 98%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffbf1e', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+
 	color: #000000;
 }
 
@@ -31,8 +37,13 @@ body
 
 #page aside h3
 {
-	background-color: #000000;
-	color: #ffffff;
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+90,ffffff+98 */
+background: #000000; /* Old browsers */
+background: -moz-linear-gradient(left,  #000000 0%, #000000 90%, #ffffff 98%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #000000 0%,#000000 90%,#ffffff 98%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #000000 0%,#000000 90%,#ffffff 98%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+	color: #FFBF1E;
 	text-align: center;
 	padding: 5px;
 }
@@ -50,7 +61,7 @@ body
 
 #page aside .fitness img
 {
-	width: 23%;
+	width: 20%;
 	display: inline-block;
 	vertical-align: middle;
 }
@@ -62,7 +73,7 @@ body
 
 #page aside .reseaux img
 {
-	width: 23%;
+	width: 20%;
 	display: inline-block;
 	vertical-align: middle;
 }
@@ -77,16 +88,70 @@ body
 #page main h1
 {
 	margin-left: 10%;
+
 }
 
 #page main h1 div
 {
 	margin-left: 10%;
 	color: #ffbf1e;
+
 }
 
 #page main h2
 {
 	margin-top: -1%;
-	background-color: #ffbf1e;
+
+}
+
+#page main #bloccv
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+#page main section 
+{
+	border: 3px solid red;
+}
+
+#page main section #exp1
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+#page main section #exp1 .description
+{
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+}
+
+#page main section #exp1 .date
+{
+	width: 20%;
+}
+
+#page main section #formation1
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+#page main section #formation1 .description
+{
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+}
+
+#page main section #formation1 .date
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
 }
