@@ -1,27 +1,34 @@
+html
+{
+	height: 100%;
+}
+
 body
 {
 	padding: 0;
 	margin: 0;	
+	min-height: 100%;
 }
 
 #page
 {
 	display: flex;
+	min-height: 100%;
 }
 
 
 
-/* ASIDE */
+/* ASIDE LISÉRER*/
 #page aside
 {
 	width: 30%;
-/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffbf1e+0,ffbf1e+90,ffffff+98 */
-background: #ffbf1e; /* Old browsers */
-background: -moz-linear-gradient(left,  #ffbf1e 0%, #ffbf1e 90%, #ffffff 98%); /* FF3.6-15 */
-background: -webkit-linear-gradient(left,  #ffbf1e 0%,#ffbf1e 90%,#ffffff 98%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to right,  #ffbf1e 0%,#ffbf1e 90%,#ffffff 98%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffbf1e', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
-
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffbf1e+0,ffbf1e+90,ffffff+98 */
+	background: #ffbf1e; /* Old browsers */
+	background: -moz-linear-gradient(left,  #ffbf1e 0%, #ffbf1e 90%, #ffffff 98%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left,  #ffbf1e 0%,#ffbf1e 90%,#ffffff 98%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right,  #ffbf1e 0%,#ffbf1e 90%,#ffffff 98%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffbf1e', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+	min-height: 100%;
 	color: #000000;
 }
 
@@ -37,12 +44,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffbf1e', end
 
 #page aside h3
 {
-/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+90,ffffff+98 */
-background: #000000; /* Old browsers */
-background: -moz-linear-gradient(left,  #000000 0%, #000000 90%, #ffffff 98%); /* FF3.6-15 */
-background: -webkit-linear-gradient(left,  #000000 0%,#000000 90%,#ffffff 98%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to right,  #000000 0%,#000000 90%,#ffffff 98%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+90,ffffff+98 */
+	background: #000000; /* Old browsers */
+	background: -moz-linear-gradient(left,  #000000 0%, #000000 90%, #ffffff 98%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left,  #000000 0%,#000000 90%,#ffffff 98%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right,  #000000 0%,#000000 90%,#ffffff 98%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
 	color: #FFBF1E;
 	text-align: center;
 	padding: 5px;
@@ -54,12 +61,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 	font-size: 1em;
 }
 
-#page aside .fitness 
+#page aside .loisirs 
 {
 	text-align: center;
 }
 
-#page aside .fitness img
+#page aside .loisirs img
 {
 	width: 20%;
 	display: inline-block;
@@ -83,44 +90,96 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 #page main
 {
 	width: 70%;
+	min-height: 100%;
+}
+
+
+
+
+
+/*MAIN TITRE*/
+#page main #titre
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	height: 25%;
 }
 
 #page main h1
 {
 	margin-left: 10%;
-
 }
 
 #page main h1 div
 {
 	margin-left: 10%;
 	color: #ffbf1e;
-
 }
 
 #page main h2
 {
 	margin-top: -1%;
-
 }
 
+
+
+
+
+/*MAIN BLOCCV*/
 #page main #bloccv
 {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: flex-start;
+	height: 85%;
+	align-content: center;
+	align-items: center;
 }
 
-#page main section 
+
+
+
+
+/*MAIN BLOCCV SECTION(EXPERIENCES)*/
+#page main #experiences
 {
-	border: 3px solid red;
+	height: 50%;
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
 }
 
+#page main #experiences .titreh3
+{
+	min-height: 10%;
+	margin-top: 0;
+	margin-bottom: 0;
+	color: #FFBF1E;
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,000000+20,000000+50,000000+80,ffffff+98 */
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(left,  #ffffff 0%, #000000 20%, #000000 50%, #000000 80%, #ffffff 98%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left,  #ffffff 0%,#000000 20%,#000000 50%,#000000 80%,#ffffff 98%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right,  #ffffff 0%,#000000 20%,#000000 50%,#000000 80%,#ffffff 98%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+}
+
+/*EXP1*/
 #page main section #exp1
 {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: space-between;
+	height: 15%;
+	border-bottom: 3px solid black;
+}
+
+#page main section #exp1 .date
+{
+	width: 25%;
+	margin-top: 0;
+	height: 100%;
 }
 
 #page main section #exp1 .description
@@ -130,16 +189,99 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 	width: 50%;
 }
 
-#page main section #exp1 .date
+#page main section #exp1 .description .titreh4
 {
-	width: 20%;
+	margin-top: 0;
+	margin-bottom: 0;
 }
 
+#page main section #exp1 .description .titreh5
+{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+/*EXP2*/
+#page main section #exp2
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	height: 15%;
+	border-bottom: 3px solid black;
+}
+
+#page main section #exp2 .date
+{
+	width: 25%;
+	margin-top: 0;
+	height: 100%;
+}
+
+#page main section #exp2 .description
+{
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+}
+
+#page main section #exp2 .description .titreh4
+{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+#page main section #exp2 .description .titreh5
+{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+/*EXP3*/
+/*EXP4*/
+/*EXP5*/
+/*EXP6*/
+
+
+/* MAIN BLOCCV SECTION(FORMATIONS) */
+#page main #formations
+{
+	height: 50%;
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+#page main #formations .titreh3
+{
+	min-height: 10%;
+	margin-top: 0;
+	margin-bottom: 0;
+	color: #FFBF1E;
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,000000+20,000000+50,000000+80,ffffff+98 */
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(left,  #ffffff 0%, #000000 20%, #000000 50%, #000000 80%, #ffffff 98%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left,  #ffffff 0%,#000000 20%,#000000 50%,#000000 80%,#ffffff 98%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right,  #ffffff 0%,#000000 20%,#000000 50%,#000000 80%,#ffffff 98%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+}
+
+/*FORMATION1*/
 #page main section #formation1
 {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: space-between;
+	height: 15%;
+	border-bottom: 3px solid black;
+}
+
+#page main section #formation1 .date
+{
+	width: 25%;
+	margin-top: 0;
+	height: 100%;
 }
 
 #page main section #formation1 .description
@@ -149,9 +291,29 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 	width: 50%;
 }
 
-#page main section #formation1 .date
+#page main section #formation1 .description .titreh4
 {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
+	margin-top: 0;
+	margin-bottom: 0;
 }
+
+#page main section #formation1 .description .titreh5
+{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+/*FORMATION2*/
+/*FORMATION3*/
+/*FORMATION4*/
+/*FORMATION5*/
+/*FORMATION6*/
+
+
+
+
+
+/*#page main section 
+{
+	border: 3px solid red;
+}*/
