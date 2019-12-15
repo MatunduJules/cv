@@ -127,10 +127,6 @@ body
 	color: #ffbf1e;
 }
 
-#page main h2
-{
-	
-}
 
 
 
@@ -671,11 +667,3 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	margin-top: 0;
 	margin-bottom: 0;
 }
-
-
-
-
-/*#page main section 
-{
-	border: 3px solid red;
-}*/
