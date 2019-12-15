@@ -31,6 +31,7 @@ body
 	background: linear-gradient(to right,  #ffbf1e 0%,#ffbf1e 90%,#ffffff 98%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffbf1e', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
 	color: #000000;
+	overflow: scroll;
 }
 
 #page aside img
@@ -141,6 +142,7 @@ body
 	height: 75%;
 	align-content: center;
 	align-items: center;
+	overflow: scroll;
 }
 
 
