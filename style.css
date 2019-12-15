@@ -8,6 +8,8 @@ body
 	padding: 0;
 	margin: 0;	
 	min-height: 100%;
+	
+	font-size: 1em;
 }
 
 #page
@@ -21,14 +23,14 @@ body
 /* ASIDE LISÉRER*/
 #page aside
 {
-	width: 30%;
+	min-width: 30%;
 	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffbf1e+0,ffbf1e+90,ffffff+98 */
 	background: #ffbf1e; /* Old browsers */
 	background: -moz-linear-gradient(left,  #ffbf1e 0%, #ffbf1e 90%, #ffffff 98%); /* FF3.6-15 */
 	background: -webkit-linear-gradient(left,  #ffbf1e 0%,#ffbf1e 90%,#ffffff 98%); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(to right,  #ffbf1e 0%,#ffbf1e 90%,#ffffff 98%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffbf1e', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
-	min-height: 100%;
+	height: 1000px;
 	color: #000000;
 }
 
@@ -103,23 +105,33 @@ body
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
-	height: 25%;
+	height: 20%;
+	align-items: center;
 }
 
 #page main h1
 {
-	margin-left: 10%;
+
+	width: 50%;
+	text-align: center;
+	font-size: 2em;
 }
 
-#page main h1 div
+#page main h1 #nom
 {
-	margin-left: 10%;
+	margin-right: 15%;
+	color: black;
+}
+
+#page main h1 #prenom
+{
+	margin-left: 15%;
 	color: #ffbf1e;
 }
 
 #page main h2
 {
-	margin-top: -1%;
+	
 }
 
 
@@ -132,7 +144,7 @@ body
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
-	height: 85%;
+	height: 75%;
 	align-content: center;
 	align-items: center;
 }
@@ -144,19 +156,31 @@ body
 /*MAIN BLOCCV SECTION(EXPERIENCES)*/
 #page main #experiences
 {
-	height: 50%;
-	width: 80%;
+	min-height: 50%;
+	min-width: 100%;
 	display: flex;
 	flex-direction: column;
 	text-align: center;
 }
 
+#page main #experiences :hover
+{
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,ffbf1e+20,ffbf1e+50,ffbf1e+80,ffffff+98 */
+background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(left,  #ffffff 0%, #ffbf1e 20%, #ffbf1e 50%, #ffbf1e 80%, #ffffff 98%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #ffffff 0%,#ffbf1e 20%,#ffbf1e 50%,#ffbf1e 80%,#ffffff 98%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #ffffff 0%,#ffbf1e 20%,#ffbf1e 50%,#ffbf1e 80%,#ffffff 98%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+
+}
+
 #page main #experiences .titreh3
 {
-	min-height: 10%;
-	margin-top: 0;
-	margin-bottom: 0;
+	padding: 5px;
 	color: #FFBF1E;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 1.3em;
 	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,000000+20,000000+50,000000+80,ffffff+98 */
 	background: #ffffff; /* Old browsers */
 	background: -moz-linear-gradient(left,  #ffffff 0%, #000000 20%, #000000 50%, #000000 80%, #ffffff 98%); /* FF3.6-15 */
@@ -165,19 +189,26 @@ body
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
 }
 
+#page main #experiences .titreh3 :hover
+{
+	color: black;
+}
+
+
+
 /*EXP1*/
 #page main section #exp1
 {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
-	height: 15%;
+	justify-content: space-around;
+	height: 10%;
 	border-bottom: 3px solid black;
 }
 
 #page main section #exp1 .date
 {
-	width: 25%;
+	width: 30%;
 	margin-top: 0;
 	height: 100%;
 }
@@ -186,7 +217,7 @@ body
 {
 	display: flex;
 	flex-direction: column;
-	width: 50%;
+	width: 30%;
 }
 
 #page main section #exp1 .description .titreh4
@@ -206,14 +237,14 @@ body
 {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
-	height: 15%;
+	justify-content: space-around;
+	height: 10%;
 	border-bottom: 3px solid black;
 }
 
 #page main section #exp2 .date
 {
-	width: 25%;
+	width: 30%;
 	margin-top: 0;
 	height: 100%;
 }
@@ -222,7 +253,7 @@ body
 {
 	display: flex;
 	flex-direction: column;
-	width: 50%;
+	width: 30%;
 }
 
 #page main section #exp2 .description .titreh4
@@ -238,27 +269,181 @@ body
 }
 
 /*EXP3*/
+#page main section #exp3
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	height: 10%;
+	border-bottom: 3px solid black;
+}
+
+#page main section #exp3 .date
+{
+	width: 30%;
+	margin-top: 0;
+	height: 100%;
+}
+
+#page main section #exp3 .description
+{
+	display: flex;
+	flex-direction: column;
+	width: 30%;
+}
+
+#page main section #exp3 .description .titreh4
+{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+#page main section #exp3 .description .titreh5
+{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
 /*EXP4*/
+#page main section #exp4
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	height: 10%;
+	border-bottom: 3px solid black;
+}
+
+#page main section #exp4 .date
+{
+	width: 30%;
+	margin-top: 0;
+	height: 100%;
+}
+
+#page main section #exp4 .description
+{
+	display: flex;
+	flex-direction: column;
+	width: 30%;
+}
+
+#page main section #exp4 .description .titreh4
+{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+#page main section #exp4 .description .titreh5
+{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
 /*EXP5*/
+#page main section #exp5
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	height: 10%;
+	border-bottom: 3px solid black;
+}
+
+#page main section #exp5 .date
+{
+	width: 30%;
+	margin-top: 0;
+	height: 100%;
+}
+
+#page main section #exp5 .description
+{
+	display: flex;
+	flex-direction: column;
+	width: 30%;
+}
+
+#page main section #exp5 .description .titreh4
+{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+#page main section #exp5 .description .titreh5
+{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
 /*EXP6*/
+#page main section #exp6
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	height: 10%;
+	border-bottom: 3px solid black;
+}
+
+#page main section #exp6 .date
+{
+	width: 30%;
+	margin-top: 0;
+	height: 100%;
+}
+
+#page main section #exp6 .description
+{
+	display: flex;
+	flex-direction: column;
+	width: 30%;
+}
+
+#page main section #exp6 .description .titreh4
+{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+#page main section #exp6 .description .titreh5
+{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+
+
 
 
 /* MAIN BLOCCV SECTION(FORMATIONS) */
 #page main #formations
 {
-	height: 50%;
-	width: 80%;
+	min-height: 45%;
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	text-align: center;
 }
 
+#page main #formations :hover
+{
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,ffbf1e+20,ffbf1e+50,ffbf1e+80,ffffff+98 */
+background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(left,  #ffffff 0%, #ffbf1e 20%, #ffbf1e 50%, #ffbf1e 80%, #ffffff 98%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #ffffff 0%,#ffbf1e 20%,#ffbf1e 50%,#ffbf1e 80%,#ffffff 98%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #ffffff 0%,#ffbf1e 20%,#ffbf1e 50%,#ffbf1e 80%,#ffffff 98%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+
+}
+
 #page main #formations .titreh3
 {
-	min-height: 10%;
-	margin-top: 0;
-	margin-bottom: 0;
+	padding: 5px;
 	color: #FFBF1E;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 1.3em;
 	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,000000+20,000000+50,000000+80,ffffff+98 */
 	background: #ffffff; /* Old browsers */
 	background: -moz-linear-gradient(left,  #ffffff 0%, #000000 20%, #000000 50%, #000000 80%, #ffffff 98%); /* FF3.6-15 */
@@ -267,19 +452,24 @@ body
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
 }
 
+#page main #formations .titreh3 :hover
+{
+	color: black;
+}
+
 /*FORMATION1*/
 #page main section #formation1
 {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
-	height: 15%;
+	justify-content: space-around;
+	height: 10%;
 	border-bottom: 3px solid black;
 }
 
 #page main section #formation1 .date
 {
-	width: 25%;
+	width: 30%;
 	margin-top: 0;
 	height: 100%;
 }
@@ -288,7 +478,7 @@ body
 {
 	display: flex;
 	flex-direction: column;
-	width: 50%;
+	width: 30%;
 }
 
 #page main section #formation1 .description .titreh4
@@ -304,11 +494,184 @@ body
 }
 
 /*FORMATION2*/
-/*FORMATION3*/
-/*FORMATION4*/
-/*FORMATION5*/
-/*FORMATION6*/
+#page main section #formation2
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	height: 10%;
+	border-bottom: 3px solid black;
+}
 
+#page main section #formation2 .date
+{
+	width: 30%;
+	margin-top: 0;
+	height: 100%;
+}
+
+#page main section #formation2 .description
+{
+	display: flex;
+	flex-direction: column;
+	width: 30%;
+}
+
+#page main section #formation2 .description .titreh4
+{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+#page main section #formation2 .description .titreh5
+{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+/*FORMATION3*/
+#page main section #formation3
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	height: 10%;
+	border-bottom: 3px solid black;
+}
+
+#page main section #formation3 .date
+{
+	width: 30%;
+	margin-top: 0;
+	height: 100%;
+}
+
+#page main section #formation3 .description
+{
+	display: flex;
+	flex-direction: column;
+	width: 30%;
+}
+
+#page main section #formation3 .description .titreh4
+{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+#page main section #formation3 .description .titreh5
+{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+/*FORMATION4*/
+#page main section #formation4
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	height: 10%;
+	border-bottom: 3px solid black;
+}
+
+#page main section #formation4 .date
+{
+	width: 30%;
+	margin-top: 0;
+	height: 100%;
+}
+
+#page main section #formation4 .description
+{
+	display: flex;
+	flex-direction: column;
+	width: 30%;
+}
+
+#page main section #formation4 .description .titreh4
+{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+#page main section #formation4 .description .titreh5
+{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+/*FORMATION5*/
+#page main section #formation5
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	height: 10%;
+	border-bottom: 3px solid black;
+}
+
+#page main section #formation5 .date
+{
+	width: 30%;
+	margin-top: 0;
+	height: 100%;
+}
+
+#page main section #formation5 .description
+{
+	display: flex;
+	flex-direction: column;
+	width: 30%;
+}
+
+#page main section #formation5 .description .titreh4
+{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+#page main section #formation5 .description .titreh5
+{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+/*FORMATION6*/
+#page main section #formation6
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	height: 15%;
+	border-bottom: 3px solid black;
+}
+
+#page main section #formation6 .date
+{
+	width: 30%;
+	margin-top: 0;
+	height: 100%;
+}
+
+#page main section #formation6 .description
+{
+	display: flex;
+	flex-direction: column;
+	width: 30%;
+}
+
+#page main section #formation6 .description .titreh4
+{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+#page main section #formation6 .description .titreh5
+{
+	margin-top: 0;
+	margin-bottom: 0;
+}
 
 
 
