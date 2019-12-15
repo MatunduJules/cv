@@ -30,7 +30,6 @@ body
 	background: -webkit-linear-gradient(left,  #ffbf1e 0%,#ffbf1e 90%,#ffffff 98%); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(to right,  #ffbf1e 0%,#ffbf1e 90%,#ffffff 98%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffbf1e', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
-	height: 1500px;
 	color: #000000;
 }
 
