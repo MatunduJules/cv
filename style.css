@@ -16,6 +16,7 @@ body
 {
 	display: flex;
 	min-height: 100%;
+	margin: auto;
 }
 
 
@@ -668,4 +669,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 {
 	margin-top: 0;
 	margin-bottom: 0;
+}
+
+@media all and (max-device-width: 1024px)
+{
+	#page
+	{
+		width: auto;
+	}
+
+	aside
+	{
+		display: none;
+	}
 }
