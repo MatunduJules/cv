@@ -671,14 +671,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	margin-bottom: 0;
 }
 
-@media all and (max-device-width: 1024px)
+@media all and (max-device-width: 980px)
 {
 	#page
 	{
 		width: auto;
 	}
 
-	aside
+	#lisere
 	{
 		display: none;
 	}
