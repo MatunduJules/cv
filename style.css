@@ -671,7 +671,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	margin-bottom: 0;
 }
 
-@media all and (max-device-width: 980px)
+@media all and (max-device-width: 480px)
 {
 	#page
 	{
