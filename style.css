@@ -19,7 +19,10 @@ body
 	margin: auto;
 }
 
-
+#photo
+{
+	display: none;
+}
 
 /* ASIDE LISÉRER*/
 #page aside
@@ -684,5 +687,146 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	#bloccv
 	{
 		margin: auto;
+		width: 80%;
+	}
+
+	#page main
+	{
+		width: 100%;
+		min-height: 100%;
+	}
+
+	#page main h1
+	{
+
+		width: 50%;
+		text-align: center;
+		font-size: 1.8em;
+	}
+
+	#page main h2
+	{
+		font-size: 1.5em;
+	}
+
+	#page main #experiences .titreh3
+	{
+		font-size: 1.3em;
+		text-transform: none;
+	}
+
+	#page main #formations .titreh3
+	{
+		font-size: 1.3em;
+		text-transform: none;
+	}
+
+	body
+	{
+		font-size: 0.8em;
+	}
+
+	#page main section #exp1 .description
+	{
+		width: 50%;
+	}
+
+	#page main section #exp2 .description
+	{
+		width: 50%;
+	}
+
+	#page main section #exp3 .description
+	{
+		width: 50%;
+	}
+
+	#page main section #exp4 .description
+	{
+		width: 50%;
+	}
+
+	#page main section #exp5 .description
+	{
+		width: 50%;
+	}
+
+	#page main section #exp6 .description
+	{
+		width: 50%;
+	}
+
+	#page main section #formation1 .description
+	{
+		width: 50%;
+	}
+
+	#page main section #formation2 .description
+	{
+		width: 50%;
+	}
+
+	#page main section #formation3 .description
+	{
+		width: 50%;
+	}
+
+	#page main section #formation4 .description
+	{
+		width: 50%;
+	}
+
+	#page main section #formation5 .description
+	{
+		width: 50%;
+	}
+
+	#page main section #formation6 .description
+	{
+		width: 50%;
+	}
+
+	#page main #titre #nomphoto
+	{
+		
+	}
+
+	#photo
+	{
+		display: block;
+		width: 100%;
+		margin: 0;
+	}
+
+	#presentation
+	{
+		display: flex;
+		flex-direction: row;
+	}
+
+	#page main h1
+	{
+		width: 100%;
+		text-align: center;
+	}
+
+	#page main h2
+	{
+		width: 100%;
+		text-align: center;
+	}
+
+	#page main img
+	{
+		width: 100%;
+	}
+
+	#page main #titre
+	{
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		width: 85%;
 	}
 }
