@@ -32,7 +32,6 @@ body
 	background: linear-gradient(to right,  #ffbf1e 0%,#ffbf1e 90%,#ffffff 98%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffbf1e', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
 	color: #000000;
-	overflow: scroll;
 }
 
 #page aside img
@@ -140,10 +139,8 @@ body
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
-	height: 75%;
 	align-content: center;
 	align-items: center;
-	overflow: scroll;
 }
 
 
@@ -153,7 +150,6 @@ body
 /*MAIN BLOCCV SECTION(EXPERIENCES)*/
 #page main #experiences
 {
-	min-height: 50%;
 	min-width: 100%;
 	display: flex;
 	flex-direction: column;
@@ -199,8 +195,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	height: 12%;
 	border-bottom: 3px solid black;
+	padding-bottom: 3%;
 }
 
 #page main section #exp1 .date
@@ -235,8 +231,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	height: 12%;
 	border-bottom: 3px solid black;
+	padding-bottom: 3%;
 }
 
 #page main section #exp2 .date
@@ -271,8 +267,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	height: 12%;
 	border-bottom: 3px solid black;
+	padding-bottom: 3%;
 }
 
 #page main section #exp3 .date
@@ -307,8 +303,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	height: 12%;
 	border-bottom: 3px solid black;
+	padding-bottom: 3%;
 }
 
 #page main section #exp4 .date
@@ -343,8 +339,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	height: 12%;
 	border-bottom: 3px solid black;
+	padding-bottom: 3%;
 }
 
 #page main section #exp5 .date
@@ -379,8 +375,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	height: 12%;
 	border-bottom: 3px solid black;
+	padding-bottom: 3%;
 }
 
 #page main section #exp6 .date
@@ -416,11 +412,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 /* MAIN BLOCCV SECTION(FORMATIONS) */
 #page main #formations
 {
-	min-height: 45%;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
 	text-align: center;
+	height: 100%;
 }
 
 #page main #formations :hover
@@ -460,8 +456,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	height: 12%;
 	border-bottom: 3px solid black;
+	padding-bottom: 3%;
 }
 
 #page main section #formation1 .date
@@ -496,8 +492,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	height: 12%;
 	border-bottom: 3px solid black;
+	padding-bottom: 3%;
 }
 
 #page main section #formation2 .date
@@ -532,8 +528,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	height: 12%;
 	border-bottom: 3px solid black;
+	padding-bottom: 3%;
 }
 
 #page main section #formation3 .date
@@ -568,8 +564,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	height: 12%;
 	border-bottom: 3px solid black;
+	padding-bottom: 3%;
 }
 
 #page main section #formation4 .date
@@ -604,8 +600,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	height: 12%;
 	border-bottom: 3px solid black;
+	padding-bottom: 3%;
 }
 
 #page main section #formation5 .date
@@ -640,9 +636,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	height: 15%;
 	border-bottom: 3px solid black;
-	padding:0;
+	padding-bottom: 3%;
 }
 
 #page main section #formation6 .date
@@ -671,15 +666,23 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	margin-bottom: 0;
 }
 
-@media all and (max-device-width: 480px)
+@media all and (max-width: 735px)
 {
 	#page
 	{
 		width: auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 	}
 
 	#lisere
 	{
 		display: none;
+	}
+
+	#bloccv
+	{
+		margin: auto;
 	}
 }
